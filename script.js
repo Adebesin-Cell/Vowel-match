@@ -1,6 +1,5 @@
 const vowels = ["a", "e", "i", "o", "u"];
 let count = 0;
-console.log();
 
 //Using a nested for loop and strict equality
 function match(str) {
@@ -29,7 +28,3 @@ function match2(str) {
   }
   return count2;
 }
-
-//console.log(match2("BisolaMeDun"));
-
-//
