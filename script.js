@@ -6,7 +6,7 @@ function match(str) {
   let stringLength = str.length;
   for (let i = 0; i < stringLength; i++) {
     for (let j = 0; j < vowels.length; j++) {
-      if (str[i] === vowels[j]) {
+      if (str[i].toLowerCase() === vowels[j]) {
         count++;
         vowelsIncluded.push(str[i]);
       }
@@ -14,7 +14,7 @@ function match(str) {
   }
   return count, vowelsIncluded;
 }
-console.log(match("BakerBread"));
+console.log(match("Asap"));
 
 //Using a nested for loop and Js .includes() method
 let count2 = 0;
@@ -23,13 +23,13 @@ function match2(str) {
   let stringLength = str.length;
   for (let i = 0; i < stringLength; i++) {
     for (let j = 0; j < vowels.length; j++) {
-      if (str[i].includes(vowels[j])) {
+      if (str[i].toLowerCase().includes(vowels[j])) {
         count2++;
         vowelsIncluded2.push(str[i]);
       }
     }
   }
-  return count2, vowelsIncluded;
+  return count2, vowelsIncluded2;
 }
 
-console.log(match2("MassageMe"));
+console.log(match2("MassageME"));
